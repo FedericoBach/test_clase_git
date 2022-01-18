@@ -1,0 +1,75 @@
+*{
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: lightblue;
+}
+.container{
+    width: 80%;
+    margin: 25px auto;
+    background-color: white;
+    padding: 1em;
+}
+/* cuando agregamso comas "," podemos agrupar elementos para darle el mismo estilo */
+input, textarea{
+    margin: 10px 0px;
+    font-size: 1.5em;
+    border: 1px solid rgb(0, 162, 255);
+    padding: 5px;   
+    border-radius: 5px;
+}
+/* como seleccionar un tipo de imput , por ejemplo password*/
+input[type=password]{
+    border-color: crimson;
+}
+/* esto no funciona porque no le puse la clase "campos" a nada, pero al hacer click en un campo deberia cambiar el estilo y sacarle el marco feo que se le hace negro */
+/* focus-visible es para cuando le das click al campo, similar a hover pero haciendo click */
+.campos:focus-visible{
+    border:none;
+    outline: none;
+    border-bottom: 1px solid magenta;
+    
+}
+.rojo{
+    color: red;
+}
+    /* boton */
+    .boton-enviar {
+        background: #DF3DF6;
+        background-image: -webkit-linear-gradient(top, #DF3DF6, #451ED0);
+        background-image: -moz-linear-gradient(top, #DF3DF6, #451ED0);
+        background-image: -ms-linear-gradient(top, #DF3DF6, #451ED0);
+        background-image: -o-linear-gradient(top, #DF3DF6, #451ED0);
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+        color: #FFFFFF;
+        font-family: Open Sans;
+        font-size: 40px;
+        font-weight: 100;
+        padding: 40px;
+        -webkit-box-shadow: -10px 12px 29px 5px #000000;
+        -moz-box-shadow: -10px 12px 29px 5px #000000;
+        box-shadow: -10px 12px 29px 5px #000000;
+        text-shadow: -4px 7px 4px #000000;
+        border: outset #4900A0 34px;
+        text-decoration: none;
+        display: inline-block;
+        cursor: pointer;
+        text-align: center;
+     }
+     
+     .boton-enviar:hover {
+        border: outset #AB23AF 34px;
+        background: #DF3DF6;
+        background-image: -webkit-linear-gradient(top, #DF3DF6, #451ED0);
+        background-image: -moz-linear-gradient(top, #DF3DF6, #451ED0);
+        background-image: -ms-linear-gradient(top, #DF3DF6, #451ED0);
+        background-image: -o-linear-gradient(top, #DF3DF6, #451ED0);
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+        text-decoration: none;
+     }

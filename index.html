@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formularios</title>
+    <link rel="stylesheet" href="styles.css/main.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Clase nro 6 - Formularios</h1>
+        <hr>
+    
+        <div class="form-wrap">
+            <!-- form, cerrar clave, escribir "action" y llevar la clausula de cierre abajo del formulario, dentro del div -->
+            <!-- esto es a donde va a ir nuestro formulario. agregar method "post" para hacer la pagina mas seguro y que no aparescan los datos en la barra de navegacion -->
+            <!-- el valor de method por defecto es "Get" -->
+            <!-- vamos a aplicar la direccion de spark.io para que nos mande el formulario a neustro mail -->
+            <form action="https://submit-form.com/gJsKnyYZ" method="post">     
+            
+            <label for="nombre">Nombre</label><br>
+            <input type="text" name="nombre"> <br>
+
+            <label for="edad">Edad<span class="rojo">*</span></label><br>
+            <!-- agregar un valor minimo y un maximo, se validan al enviar o se anulan si hay valores que se salen de los permitidos -->
+            <input type="number" name="edad" min="1" max="110"> <br>
+        
+            <label for="email">Email</label><br>
+            <!-- añadimos "required" para hacer un campo obligatorio -->
+            <input type="text" name="email" required><br>
+
+            <label for="password">Password</label><br>
+            <!-- maxlenght para que no se pueda pasar de determinada cantidad de caracteres -->
+            <!-- tambien se le puede poner nombre de clase a cualqu iera de estas cosas para darle estilo como clase -->
+            <input type="password" name="password" id="" maxlength="8" class="pass"><br>
+
+            <label for="">Como nos conociste?</label> <br>
+            <textarea name="Como nos conociste?" id="" cols="30" rows="10"></textarea> <br><br>
+            <br><br>
+            <!-- para hacer un selector de nacionalidad por ejemplo, usamos select y option debajo. el value es obligatorio y es lo que nosotros desde el backend vamos a recibir como dato, lo blanco es lo que va  aver el usuario -->
+            <label for="pais">Selecciona tu pais</label><br>
+            <!-- el "id" podemos usarlo como no, viene ene el "snipet" de cuando lo creamos, pero lo  podemos borrar y ponerule un class si quisieramos o nada -->
+            <select name="pais" id="">
+                <option value="arg">Argentina</option>
+                <option value="br">Brasil</option>
+                <option value="ch">Chile</option>
+            </select>
+            <br><br>
+ 
+            <!-- input type="checkbox" permite seleccionar multiples casillas al musmi tiempo,  -->
+            <!-- imput type="radio" permite seleccionar solo una casilla de los imputs que tengan el mismo "name"+importante+ , tambien se le puede poner propiedad required etc -->
+            <label for="">Genero</label> <br><br>
+            
+            <label for="">Hombre</label>
+            <input type="radio" value="Hombre" name="genero"><br>
+            
+            <label for="">Mujer</label>
+            <input type="radio" value="Mujer" name="genero"><br>
+            
+            <label for="">cosa rara</label>
+            <input type="radio" value="indefinido" name="genero"><br>    
+            
+            <!-- boton bizarro quetodavia no se como hacerlo funcionar -->
+            <!-- <a href="https://submit-form.com/gJsKnyYZ" class="boton-enviar" type="submit">boton bizarro  </a> -->
+            <input type="submit" value="Enviar solicitud">
+
+            </form>
+        </div>
+    
+    
+    
+    
+    
+    
+    
+    </div>
+</body>
+</html>
